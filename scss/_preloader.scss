@@ -1,0 +1,19 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+.preloader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: $bg1;
+    z-index: 999999999;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+
+}
+

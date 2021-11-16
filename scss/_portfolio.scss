@@ -1,0 +1,83 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+#portfolio{
+    .port-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            li{
+                cursor: pointer;
+                color: #fff;
+                @include popins(16px, 500);
+                text-transform: uppercase;
+                margin: 0px 15px 15px;
+                z-index: 10;
+                
+                @include transition;
+
+                &:hover{
+                    color: $brandcol;
+                }
+
+                &.active{
+                    color: $brandcol;
+                }
+
+            }
+        }
+    }
+
+    .port-main{
+        
+        figure{
+            position: relative;
+            cursor: pointer;
+            z-index: 10;
+
+            .overlay{
+                width: 100%;
+                height: 100%;
+                background: $brandcol;
+                border-radius: 8px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                z-index: 10;
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include transition;
+                
+                .text{
+                    @include popins(16px, 700);
+                    text-transform: uppercase;
+                    color: #fff;
+                    margin-top: -30px;
+                    @include transition;
+                    
+                }
+
+            }
+
+        
+           img{
+               border-radius: 8px;
+           }
+
+           &:hover .overlay{
+            visibility: visible;
+            opacity: 1;
+           }
+           &:hover .overlay .text{
+            margin-top: 0;
+           }
+        }
+    }
+}

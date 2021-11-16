@@ -1,0 +1,91 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+
+#navbar{
+
+
+    .menu{
+        position: fixed;
+        right: 40px;
+        top: 158px;
+        z-index: 11;
+
+
+    .menu-icon{
+        margin-bottom: 20px;
+        
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+        a{
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: $brandcol;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover h2{
+                
+                    padding-right:70px ;
+                    padding-left: 35px;
+                    visibility: visible;
+                    opacity: 1;
+            }
+            
+            
+        
+            h2{
+                @include popins (15px, 600 );
+                text-transform: uppercase;
+                position: relative;
+                padding-top:16px  ;
+                // padding-right:70px ;
+                padding-right:0px ;
+                padding-bottom: 16px ;
+                // padding-left: 35px;
+                padding-left: 0px;
+                border: 1px solid $brandcol;
+                border-radius: 30px;
+                letter-spacing: 4px;
+                color: #fff;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: $brandcol;
+                visibility: hidden;
+                opacity: 0;
+
+                @include transition;
+            
+
+            
+            }
+
+            i{
+                font-size: 16px;
+                width: 50px;
+                height: 50px;
+                background: $brandcol;
+                border-radius: 50%;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                right: 0;
+
+            }
+            
+            
+        }
+    }
+    }
+
+}

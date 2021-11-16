@@ -1,0 +1,74 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+body{
+    // overflow-x: hidden;
+    cursor: none;
+
+    .cursor{
+        width: 7px;
+        height: 7px;
+        background: $brandcol;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 10;
+        transition-timing-function: ease-out;
+       
+      
+
+        &:nth-child(2){
+            width: 45px;
+            height: 45px;
+            background: $brandcol;
+            opacity: 0.3;
+           
+           
+            
+            
+        }
+    }
+
+    .cursor-expand{
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: 1px solid $brandcol;
+        
+        
+    }
+
+    .cursor-click{
+        
+        animation: expand 0.5s forwards;
+
+    }
+
+    @keyframes expand {
+
+        0%{
+            width: 5px;
+            height: 5px;
+            border-color: #fff;
+        }
+        50%{
+            width: 60px;
+            height: 60px;
+            border-color: #fff;
+            
+        }
+        100%{
+            width: 5px;
+            height: 5px;
+            border-color: #fff;
+            opacity: 0;
+        }
+    }
+
+
+
+
+}

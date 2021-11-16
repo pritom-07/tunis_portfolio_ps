@@ -1,0 +1,67 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* ================
+common css ends
+================== */ 
+
+
+@import 'preloader.scss';
+/* ================
+preloader css ends
+================== */
+
+@import 'cursor.scss';
+/* ================
+cursor css ends
+================== */
+
+@import 'menu.scss';
+/* ================
+navbar css ends
+================== */
+
+
+@import 'home.scss';
+
+/* ================
+home css ends
+================== */
+
+@import 'about.scss';
+
+/* ================
+ about css ends
+================== */
+
+@import 'portfolio.scss';
+
+/* ================
+ portfolio css ends
+================== */

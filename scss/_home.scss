@@ -1,0 +1,78 @@
+
+@import 'variable.scss';
+@import 'mixin.scss';
+
+body{
+    background:$bg2;
+}
+
+#home{
+
+    .container-fluid{
+      
+        height: 100vh;
+
+        .bg-shape{
+            position: fixed;
+            height: 200%;
+            width: 100%;
+            transform: rotate(-15deg);
+            left: -83%;
+            top: -50%;
+            background: $brandcol;
+            
+           
+        }
+       
+        .profile{
+            background:url('../images/profile.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: calc(100vh - 80px);
+            z-index: 5;
+            border-radius: 30px;
+            left: 40px;
+            top: 40px;
+            box-shadow: 0 0 7px rgba(0,0,0,.9);
+           
+        }
+        
+    }
+
+    .text-area{
+        padding-top: 166px;
+        padding-left: 100px;
+       
+       
+        h1{
+            @include popins (40px, 700);
+            text-transform: uppercase;
+            color:$brandcol;
+            padding-bottom: 10px;
+            span{
+                display: block;
+                color: #fff;
+            }
+        }
+
+        p{
+            @include opensans(16px, 400);
+            color: #fff;
+            line-height: 30px;
+            padding-right: 120px;
+
+
+
+        }
+
+       .cta-btn{
+           margin-top: 40px;
+           @include cta-btn;
+         
+       }
+
+
+
+    }
+}
