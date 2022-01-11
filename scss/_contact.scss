@@ -1,0 +1,123 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+#contact{
+    .contact-heading{
+        h3{
+           @include popins (26px, 600); 
+           text-transform: uppercase;
+           
+        }
+        p{
+            @include opensans (15px, 500);
+
+
+        }
+    }
+
+
+    .address{
+        p{
+            @include opensans (15px, 600);
+            position: relative;
+            padding-left: 53px;
+            margin-bottom: 20px;
+            padding-top: 5px;
+
+
+
+            i{
+                display: inline-block;
+                font-size: 33px;
+                color: $brandcol;
+                position: absolute;
+                left: 0;
+                // top: 10px;
+
+            }
+
+            span{
+               font-weight: 400;
+               text-transform: uppercase;
+               opacity: .8;
+               display: block;
+            }
+        }
+    }
+
+    .social{
+        display: flex;
+        li{
+
+            a{
+                color:white;
+                display: inline-block;
+                font-size: 17px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background:$bg1;
+                text-align: center;
+                line-height: 40px;
+                margin:0px 6px;
+                @include transition;
+
+                &:hover{
+                    background: $brandcol;
+                }
+            }
+        }
+    }
+
+
+    form{
+        
+
+        input{
+            background: $bg1;
+            color:#fff;
+            @include popins (15px, 400);
+            text-transform: uppercase;
+            border-radius: 30px;
+            padding: 15px 0px 15px 10px; 
+            border-color:transparent;
+            outline: none !important;
+            @include transition;
+           
+            
+           
+        }
+
+        input:focus{
+            border-color: $brandcol;
+        }
+
+        textarea{
+            background: $bg1;
+            color:#fff;
+            @include popins (15px, 400);
+            text-transform: uppercase;
+            border-radius: 30px;
+            padding: 15px 12px;
+            border-color: transparent;
+            outline: none;
+            @include transition;
+            
+        }
+
+        textarea:focus{
+            border-color: $brandcol;
+        }
+
+       a{
+           @include cta-btn;
+          
+         
+       } 
+    }
+
+
+
+
+}

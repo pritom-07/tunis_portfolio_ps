@@ -1,0 +1,118 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+#blog{
+    padding: 0;
+
+    .blog-content{
+        border-radius: 5px;
+        cursor: pointer;
+       
+
+        .blog-img{
+            overflow: hidden;
+            border-radius: 5px;
+            img{
+                @include transition;
+                border-radius: 5px;
+            }
+        }
+
+        .main-content{
+            
+        &:hover img{
+            transform: scale(1.2);
+        }
+        }
+
+       
+
+        .blog-text{
+            border-top: 4px solid $brandcol;
+            background: $bg1;
+            padding: 20px 25px 25px;
+            border-radius: 0px 0px 5px 5px;
+
+
+            h3{
+                @include popins (20px, 600);
+            }
+
+            p{
+                @include opensans(15px, 400);
+                padding-top:10px;
+            }
+        }
+
+        .modal-content{
+            background: transparent;
+            
+                background: rgba(0, 0, 0, 0.5) !important;
+        
+                .modal-header{
+                    background:rgb(0, 0, 0) !important;
+            
+                    .close-btn{
+                        border: none;
+                        outline: none;
+                        background: transparent;
+            
+                        i{
+                            color: #fff;
+                            font-size: 35px;
+                        }
+                    }
+                }
+                .modal-body{
+                    background: $bg1 !important;
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    border-radius: 10px;
+
+                    .post-title{
+                        h1{
+                            @include popins(35px, 800);
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .image{
+                        img{
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-top: 30px;
+                        }
+                    }
+
+                    .paragraph{
+                        p{
+                            @include opensans (15px, 500);
+                            line-height: 1.5rem;
+                            padding:20px 0px;
+
+                            &:nth-child(2){
+                                font-size: 17px;
+                                text-transform: capitalize;
+                                font-style: italic;
+                               
+
+                                i{
+                                    font-size: 40px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+        }
+       
+    }
+
+    
+
+
+
+   
+}

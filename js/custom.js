@@ -34,6 +34,17 @@ $(document).ready(function(){
 
     });
 
+    // cursor z index solution
+    $('.profile, .skills, .port-main').on("mouseenter", function(){
+        $('.cursor').css("z-index","10");
+    });
+     $('.profile, .skills, .port-main').on("mouseleave", function(){
+        $('.cursor').css("z-index","-1");
+    });
+        
+
+    
+
 
     // portfolio menu active 
 
