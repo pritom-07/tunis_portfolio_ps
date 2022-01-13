@@ -10,6 +10,8 @@ $(document).ready(function(){
 
     });
 
+    
+
     // custom cursor
 
     $(document).mousemove(function(e){

@@ -1,0 +1,218 @@
+/* ================== 
+extra small devices 
+=====================*/
+
+/* ============== home css start ============= */
+
+@media (max-width:575.99px) {
+    
+    #home .container-fluid .bg-shape {
+        display: none;
+    }
+
+    #home .container-fluid .profile {
+        background-position: center;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+        border: 4px solid #252525;
+        position: absolute !important;
+        
+    }
+
+    #navbar .menu {
+        display: flex;
+        justify-content: space-evenly;
+        top: calc(100% - 70px);
+        left: 0px;
+        background: #2b2a2a;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #navbar .menu .menu-icon{
+      background:  #504e4efb;
+        
+    }
+
+    #navbar .menu .menu-icon {
+        margin-bottom: 0px;
+    }
+
+    #navbar .menu .menu-icon a h2 {
+        display: none;
+    }
+
+
+    #home .text-area {
+        padding-top: 320px;
+        padding-bottom: 110px;
+        padding-left:0;
+        padding-right:0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    #home .text-area h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #home .text-area p {
+        font-size: 14px;
+        line-height: 25px;
+        padding-right:5px;
+        padding-left:5px;
+        text-align: center;
+    }
+
+    #home .text-area .cta-btn {
+        top: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        padding: 16px 70px 16px 35px;
+        border: 1px solid #ffb400;
+        border-radius: 30px;
+        display: inline-block;
+        color: #fff;
+        z-index: 10;
+        overflow: hidden;
+        
+     
+    }
+    
+}
+
+/* ============== home css end ============= */
+
+/* ============== about css start ============= */
+body .header-title .title-bg {
+	display: none;
+}
+
+body .header-title h1 {
+	font-size: 37px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+body #about .personal-info .title h2 {
+	font-size: 22px;
+	
+}
+body #about .personal-info .cta-btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+body #about .experience .col-lg-6{
+    width: 50%;
+}
+
+body #about .box-start-right p::before {
+	display: none;
+}
+body #about .box-start-right {
+	padding: 10px;
+	
+}
+body #about .box-start-right p {
+	padding-left: 20px;
+}
+
+body #about .mini-title h3 {
+	font-size: 22px;
+    text-align: left;
+}
+
+body #about .skills {
+	width: 50%;
+    
+}
+
+
+/* ============== about css end ============= */
+
+
+/* ============== portfolio css start ============= */
+
+#portfolio .port-menu ul{
+width: 100%;
+display: block;
+margin-bottom: 20px;
+}
+#portfolio .port-menu ul li {
+	font-size: 16px;
+	margin: 0px 0px 15px;
+    display:block; 
+    flex-grow: inherit;
+    float: left;
+	text-align: center;
+	
+}
+
+#portfolio .port-menu ul li:nth-child(1){
+    width: 33%;
+}
+#portfolio .port-menu ul li:nth-child(2){
+    width: 33%;
+}
+#portfolio .port-menu ul li:nth-child(3){
+    width: 33%;
+}
+#portfolio .port-menu ul li:nth-child(4){
+    width: 50%;
+    padding-left: 15px;
+}
+#portfolio .port-menu ul li:nth-child(5){
+    width: 50%;
+    padding-left: 15px;
+    
+}
+
+/* ============== portfolio css end ============= */
+
+
+/* ============== contact css start ============= */
+#contact .contact-heading h3 {
+	margin-bottom: 20px;
+}
+
+#contact .contact-heading p {
+    margin-bottom: 20px;
+}
+
+#contact .social {
+	margin-top: 20px;
+	margin-bottom: 30px;
+    margin-left: -8px;
+}
+
+#contact form .name-email {
+	flex-direction: column;
+}
+
+
+
+/* ============== contact css end ============= */
+
+
+
+
+/* ================== 
+extra small devices 
+=====================*/
